@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iruma Vitale | About Me</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#8b5cf6',
+                        secondary: '#f59e0b',
+                    }
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f8fafc;
+        }
+        .section-title {
+            position: relative;
+            display: inline-block;
+        }
+        .section-title:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 4px;
+            bottom: -8px;
+            left: 0;
+            background-color: #8b5cf6;
+            border-radius: 2px;
+        }
+        .vtuber-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        .lore-timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 17px;
+            height: 100%;
+            width: 2px;
+            background: #e2e8f0;
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <span class="text-xl font-bold text-primary">Iruma Vitale</span>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#intro" class="text-gray-700 hover:text-primary transition">Intro</a>
+                    <a href="#about" class="text-gray-700 hover:text-primary transition">About</a>
+                    <a href="#design" class="text-gray-700 hover:text-primary transition">Design</a>
+                    <a href="#vtuber" class="text-gray-700 hover:text-primary transition">VTuber</a>
+                    <a href="#lore" class="text-gray-700 hover:text-primary transition">Lore</a>
+                    <a href="#credits" class="text-gray-700 hover:text-primary transition">Credits</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-toggle" class="text-gray-700">
+                        <i data-feather="menu"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-md">
+            <div class="flex flex-col space-y-2">
+                <a href="#intro" class="text-gray-700 hover:text-primary transition py-2">Intro</a>
+                <a href="#about" class="text-gray-700 hover:text-primary transition py-2">About</a>
+                <a href="#design" class="text-gray-700 hover:text-primary transition py-2">Design</a>
+                <a href="#vtuber" class="text-gray-700 hover:text-primary transition py-2">VTuber</a>
+                <a href="#lore" class="text-gray-700 hover:text-primary transition py-2">Lore</a>
+                <a href="#credits" class="text-gray-700 hover:text-primary transition py-2">Credits</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Intro Section -->
+    <section id="intro" class="py-20 bg-gradient-to-br from-primary/10 to-secondary/10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">Hello, I'm <span class="text-primary">Pixel</span></h1>
+                    <p class="text-lg text-gray-600 mb-8">Hi! it Iruma Vitale I,m your friendly femboy VTuber.</p>
+                    <div class="flex space-x-4">
+                        <a href="#about" class="bg-primary text-white px-6 py-3 rounded-lg hover:bg-primary/90 transition">Explore More</a>
+                        <a href="#vtuber" class="border border-primary text-primary px-6 py-3 rounded-lg hover:bg-primary/10 transition">My Model</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="http://static.photos/technology/640x360/42" alt="Pixel's Avatar" class="rounded-2xl shadow-xl w-full max-w-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">About Me</h2>
+            <div class="flex flex-col md:flex-row gap-12">
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">Who I Am</h3>
+                        <p class="text-gray-600 mb-6">A creative technologist with a passion for digital personas and virtual storytelling. By day, I'm a UI/UX designer, and by night, I craft immersive VTuber experiences.</p>
+                        <div class="flex items-center mb-4">
+                            <i data-feather="map-pin" class="text-secondary mr-2"></i>
+                            <span class="text-gray-600">Digital Nomad | Earth Server</span>
+                        </div>
+                        <div class="flex items-center mb-4">
+                            <i data-feather="cpu" class="text-secondary mr-2"></i>
+                            <span class="text-gray-600">Tech Stack: Live2D, Blender, Unity, Adobe Suite</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i data-feather="heart" class="text-secondary mr-2"></i>
+                            <span class="text-gray-600">Passions: Character Design, Worldbuilding, Interactive Media</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-sm">
+                        <h3 class="text-xl font-semibold mb-4 text-primary">My Journey</h3>
+                        <p class="text-gray-600 mb-6">My fascination with digital identities began when I created my first online avatar at age 12. Since then, I've been exploring how virtual personas can create meaningful connections.</p>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-full mr-4">
+                                    <i data-feather="award" class="text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">5+ Years</h4>
+                                    <p class="text-gray-600 text-sm">Creating digital characters</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-full mr-4">
+                                    <i data-feather="users" class="text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">12 Characters</h4>
+                                    <p class="text-gray-600 text-sm">Designed and rigged</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <div class="bg-primary/10 p-2 rounded-full mr-4">
+                                    <i data-feather="film" class="text-primary"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium">200+ Hours</h4>
+                                    <p class="text-gray-600 text-sm">Of VTuber content created</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Design Reference Section -->
+    <section id="design" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">Design Reference</h2>
+            <div class="mb-12">
+                <h3 class="text-xl font-semibold mb-6 text-primary">My Aesthetic</h3>
+                <p class="text-gray-600 mb-8 max-w-3xl">I draw inspiration from cyberpunk aesthetics, Studio Ghibli's warmth, and the clean minimalism of modern UI design. My work often features a balance between organic shapes and digital precision.</p>
+                
+                <div class="grid grid-cols-2 md:grid-cols-4 gap-4 mb-12">
+                    <div class="bg-primary p-8 rounded-xl aspect-square flex items-center justify-center">
+                        <span class="text-white font-medium">Cyberpop</span>
+                    </div>
+                    <div class="bg-secondary p-8 rounded-xl aspect-square flex items-center justify-center">
+                        <span class="text-white font-medium">Neon Pastel</span>
+                    </div>
+                    <div class="bg-gray-800 p-8 rounded-xl aspect-square flex items-center justify-center">
+                        <span class="text-white font-medium">Glitchcore</span>
+                    </div>
+                    <div class="bg-pink-500 p-8 rounded-xl aspect-square flex items-center justify-center">
+                        <span class="text-white font-medium">Kawaii</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3 class="text-xl font-semibold mb-6 text-primary">Tools & Techniques</h3>
+                <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <i data-feather="box" class="text-primary w-8 h-8 mx-auto mb-3"></i>
+                        <h4 class="font-medium">3D Modeling</h4>
+                        <p class="text-gray-600 text-sm mt-1">Blender, Maya</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <i data-feather="image" class="text-primary w-8 h-8 mx-auto mb-3"></i>
+                        <h4 class="font-medium">2D Art</h4>
+                        <p class="text-gray-600 text-sm mt-1">Clip Studio, Photoshop</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <i data-feather="cpu" class="text-primary w-8 h-8 mx-auto mb-3"></i>
+                        <h4 class="font-medium">Rigging</h4>
+                        <p class="text-gray-600 text-sm mt-1">Live2D, Vroid</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <i data-feather="code" class="text-primary w-8 h-8 mx-auto mb-3"></i>
+                        <h4 class="font-medium">Development</h4>
+                        <p class="text-gray-600 text-sm mt-1">Unity, VSeeFace</p>
+                    </div>
+                    <div class="bg-white p-6 rounded-xl shadow-sm text-center">
+                        <i data-feather="video" class="text-primary w-8 h-8 mx-auto mb-3"></i>
+                        <h4 class="font-medium">Streaming</h4>
+                        <p class="text-gray-600 text-sm mt-1">OBS, VTube Studio</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VTuber Models Section -->
+    <section id="vtuber" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold mb-12 text-center section-title">VTuber Models</h2>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Model 1 -->
+                <div class="vtuber-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <img src="http://static.photos/abstract/640x360/101" alt="Nova Model" class="h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Nova</h3>
+                        <p class="text-gray-600 mb-4">Stellar guardian with cosmic powers</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full">2D Live2D</span>
+                            <span class="bg-secondary/10 text-secondary text-xs px-3 py-1 rounded-full">Expressive</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Rigged</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Model 2 -->
+                <div class="vtuber-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <img src="http://static.photos/abstract/640x360/102" alt="Kiri Model" class="h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Kiri</h3>
+                        <p class="text-gray-600 mb-4">Mysterious forest spirit with shadow magic</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full">3D VRM</span>
+                            <span class="bg-secondary/10 text-secondary text-xs px-3 py-1 rounded-full">Dynamic</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Full-body</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Model 3 -->
+                <div class="vtuber-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <div class="h-64 bg-gradient-to-r from-primary/20 to-secondary/20 flex items-center justify-center">
+                        <img src="http://static.photos/abstract/640x360/103" alt="Byte Model" class="h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Byte</h3>
+                        <p class="text-gray-600 mb-4">Cybernetic fox with hacking abilities</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-primary/10 text-primary text-xs px-3 py-1 rounded-full">Hybrid 2.5D</span>
+                            <span class="bg-secondary/10 text-secondary text-xs px-3 py-1 rounded-full">Interactive</span>
+                            <span class="bg-purple-100 text-purple-800 text-xs px-3 py-1 rounded-full">Toon Shader</span>
+                        </div>
+                        <a href="#" class="text-primary font-medium flex items-center">
+                            View Details <i data-feather="arrow-right" class="ml-2 w-4 h-4"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lore Section -->
+    <section id="lore" class="
+</body>
+</html>
